@@ -1,0 +1,320 @@
+article {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.comments-section {
+    margin-top: 40px;
+}
+
+.comments-title {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Additional Sections */
+.services, .contact {
+    padding: 50px 0;
+}
+
+.services h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services p, .contact p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    display: inline-block;
+}
+
+.pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.pagination .current {
+    padding: 8px 16px;
+    margin: 0 2px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: inline-block;
+}
+
+
+/* Comments pagination styles */
+.comments-pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.comments-pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    display: inline-block;
+}
+
+.comments-pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.comments-pagination .current {
+    padding: 8px 16px;
+    margin: 0 2px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: inline-block;
+}
+
+/* General Navbar Styles */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 14px;
+        width: 100%;
+    }
+}
+
+/* Navbar Logo */
+.nav-logo {
+    float: left;
+    padding: 14px 20px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+    display: none;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Comments Section */
+.comments-area {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.comments-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-list .comment {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comment-list .comment .comment-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-list .comment .comment-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.comment-list .comment .comment-content {
+    font-size: 1em;
+    color: #555;
+}
+
+.comment-list .comment .reply {
+    margin-top: 10px;
+}
+
+.comment-list .comment .reply a {
+    font-size: 0.9em;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.comment-list .comment .reply a:hover {
+    text-decoration: underline;
+}
+
+/* Comment Form */
+.comment-respond {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.comment-respond .comment-reply-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.comment-respond form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-respond form p {
+    margin-bottom: 10px;
+}
+
+.comment-respond form input,
+.comment-respond form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.comment-respond form textarea {
+    min-height: 150px;
+}
+
+.comment-respond form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-respond form input[type="submit"]:hover {
+    background-color: #005bb5;
+}
